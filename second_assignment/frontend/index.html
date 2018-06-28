@@ -5,6 +5,7 @@
     <title>Second Assignment</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/themes.css">
     <link rel="stylesheet" href="css/datatables.min.css">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
@@ -32,10 +33,10 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"
                        role="button" aria-haspopup="true" aria-expanded="false">Options <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Add DSU</a></li>
+                        <li><a id="adddsu" href="#">Add DSU</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">Add Site</a></li>
-                        <li><a href="#">View Site</a></li>
+                        <li><a id="addsite" href="#">Add Site</a></li>
+                        <li><a id="viewsites" href="#">View Site</a></li>
                     </ul>
                 </li>
             </ul>
@@ -43,24 +44,25 @@
     </div>
 </nav>
 
-<div id="main" class="container">
+<div id="main" class="container theme-showcase" role="main">
 
-
+    <div class="jumbotron">
+        <h2>Welcome to Second Assignment Intro Page</h2>
+        <p>This is the introduction for the second assignment</p>
+        <p>This website has been developed using Vanilla JS without relying on any front-end frameworks , i.e: ReactJS , VueJS....etc</p>
+    </div>
 
 </div>
+<script type="text/javascript">
+    var siteConfig = {
 
+        backendURL:"http://localhost:3000"
 
-
-
-<script type="mustache/x-tmpl" id="main">
-
-    <p>Name : {{name}}</p>
-
+    };
 </script>
-
-
-
-
+<script type="text/javascript" src="js/views/AddDSUView.js"></script>
+<script type="text/javascript" src="js/views/AddSiteView.js"></script>
+<script type="text/javascript" src="js/views/DisplaySitesView.js"></script>
 <script type="text/javascript" src="index.js"></script>
 </body>
 </html>

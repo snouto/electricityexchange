@@ -1,0 +1,47 @@
+<div class="page-header" id="addsite-template">
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            Add New Site
+            <a href="#" class="addNew"><i class="glyphicon glyphicon-plus pull-right"></i></a>
+        </div>
+    </div>
+
+    <div class="panel-body site-container">
+
+    </div>
+
+    <div class="panel-footer">
+        <button class="btn btn-primary btn-save-site" disabled="disabled">Save Changes</button>
+    </div>
+</div>
+
+<script type="text/site-template" id="singlesite">
+
+    <div class="row addsite-row">
+        <a href="#" class="addsite-remove" style="margin-right: 5px;"><i class="glyphicon glyphicon-remove pull-right"></i></a>
+        <div class="col-md-12">
+            <div class="form-group-lg">
+                <label class="control-label">
+                    Site Name
+                </label>
+                <input type="text" class="form-control site_name">
+            </div>
+            <div class="form-group-lg">
+                <label class="control-label">
+                    Site Description
+                </label>
+                <textarea class="form-control site_description" rows="3" style="margin-bottom: 15px;"></textarea>
+            </div>
+            <div class="form-group-lg">
+                <label class="control-label">
+                    Site DSU
+                </label>
+                <select class="form-control sitedsus">
+                    <option value="-1">Please Select DSU</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+</script>
